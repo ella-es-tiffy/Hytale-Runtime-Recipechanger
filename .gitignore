@@ -1,0 +1,5 @@
+bin/
+*.jar
+.DS_Store
+*.tmp
+*.log

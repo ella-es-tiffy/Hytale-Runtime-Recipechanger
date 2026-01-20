@@ -1,0 +1,17 @@
+{
+    "Group": "tiffy",
+    "Name": "RtChanger",
+    "Version": "1.0.0",
+    "Description": "RtChanger - Runtime Recipe Changer. Change any recipe via JSON without restarting.",
+    "Authors": [
+        {
+            "Name": "tiffy"
+        }
+    ],
+    "Main": "com.tiffy.poc.RtChanger",
+    "ServerVersion": ">=2026.1.0",
+    "Dependencies": {},
+    "OptionalDependencies": {},
+    "DisabledByDefault": false,
+    "IncludesAssetPack": false
+}
