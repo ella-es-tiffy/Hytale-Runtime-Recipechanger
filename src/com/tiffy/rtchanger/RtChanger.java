@@ -1,4 +1,4 @@
-package com.tiffy.poc;
+package com.tiffy.rtchanger;
 
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;

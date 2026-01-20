@@ -8,7 +8,7 @@
             "Name": "tiffy"
         }
     ],
-    "Main": "com.tiffy.poc.RtChanger",
+    "Main": "com.tiffy.rtchanger.RtChanger",
     "ServerVersion": ">=2026.1.0",
     "Dependencies": {},
     "OptionalDependencies": {},
