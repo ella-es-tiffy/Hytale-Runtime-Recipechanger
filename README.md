@@ -1,33 +1,37 @@
-# RtChanger - Hytale Runtime Recipe Changer
+# RtChanger
 
-RtChanger is a lightweight, standalone utility mod for Hytale that allows server owners to modify crafting recipes dynamically at runtime via a simple JSON configuration.
+Override any crafting recipe using a simple config file. Changes take effect on startup.
 
-## Features
-- **Dynamic Overrides**: Modify any crafting recipe (custom or vanilla) without restarting the server or modifying asset files.
-- **Auto-Detection**: Automatically identifies generated recipes for a given Item ID.
-- **Sync Technology**: Uses the internal Hytale AssetStore synchronization to ensure UI (Workbench) and logic are always in sync.
-- **Flexible Config**: Define multiple ingredients and amounts per recipe.
+RtChanger lets you change crafting recipes through a simple configuration file. Instead of digging through asset files, you just define your changes in `rtchanger.json`.
 
-## Installation
-1. Place `RtChanger.jar` into your `mods/` directory.
-2. After the first start, a configuration file is created at `mods/tiffy/rt_overrides.json`.
-3. Edit the JSON and restart (or wait for the mod's auto-retry interval).
+The mod applies these overrides during startup. It automatically syncs with the in-game workbench so players see the updated costs.
 
-## Configuration Example
-File: `mods/tiffy/rt_overrides.json`
+**Example Config:**
+File: `mods/tiffy/rtchanger.json`
 ```json
 {
     "overrides": [
         {
-            "targetItemId": "Jewelry_Fly_Ring",
+            "targetItemId": "Bench_Campfire",
             "ingredients": [
-                { "id": "Ingredient_Bar_Iron", "amount": 1500 },
-                { "id": "Ingredient_Bar_Gold", "amount": 250 }
+                { "id": "Ingredient_Bar_Iron", "amount": 100 },
+                { "id": "Ingredient_Bar_Copper", "amount": 25 }
+            ]
+        },
+        {
+            "targetItemId": "Survival_Trap_Snapjaw",
+            "ingredients": [
+                { "id": "Ingredient_Bar_Iron", "amount": 999 },
+                { "id": "Ingredient_Bar_Copper", "amount": 999 }
             ]
         }
     ]
 }
 ```
 
-## Credits
-Developed by tiffy.
+**How to use:**
+1. Put the mod in your `mods/` folder.
+2. Edit `mods/tiffy/rtchanger.json` with the Item IDs you want to change.
+3. Restart your server.
+
+It works for both vanilla Hytale items and items added by other mods.

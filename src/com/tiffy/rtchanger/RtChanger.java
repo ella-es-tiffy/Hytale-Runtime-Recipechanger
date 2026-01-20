@@ -144,9 +144,10 @@ public class RtChanger extends JavaPlugin {
         config.overrides = new ArrayList<>();
 
         RecipeOverride example = new RecipeOverride();
-        example.targetItemId = "Jewelry_Fly_Ring";
+        example.targetItemId = "Bench_Campfire";
         example.ingredients = new ArrayList<>();
         example.ingredients.add(new Ingredient("Ingredient_Bar_Iron", 100));
+        example.ingredients.add(new Ingredient("Ingredient_Bar_Copper", 25));
 
         config.overrides.add(example);
 
