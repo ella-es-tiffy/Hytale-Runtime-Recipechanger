@@ -35,3 +35,6 @@ File: `mods/tiffy/rtchanger.json`
 3. Restart your server.
 
 It works for both vanilla Hytale items and items added by other mods.
+
+---
+Please let me know about bugs or suggestions if needed!
