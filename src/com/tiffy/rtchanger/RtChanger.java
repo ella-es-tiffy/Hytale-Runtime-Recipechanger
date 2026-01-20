@@ -49,10 +49,11 @@ public class RtChanger extends JavaPlugin {
     }
 
     private void loadAndApplyConfig() {
-        File configFile = new File("mods/tiffy/rt_overrides.json");
+        File configFile = new File("mods/tiffy/rtchanger.json");
         if (!configFile.exists()) {
             // Migration check
             File[] legacyFiles = {
+                    new File("mods/tiffy/rt_overrides.json"),
                     new File("mods/tiffy/recipe_overrides.json"),
                     new File("mods/tiffy/poc_config.json")
             };
